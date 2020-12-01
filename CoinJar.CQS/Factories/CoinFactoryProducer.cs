@@ -6,14 +6,14 @@ namespace CoinJar.CQS.Factories
 {
     public  static class CoinFactoryProducer
     {
-        public static ICoinFactory GetFactory(CurrencyCode currency)
+        public static ICoinFactory GetFactory(CurrencyCode currencyCode)
         {
-            switch (currency)
+            switch (currencyCode)
             {
                 case CurrencyCode.USD:
                     return new UsdCoinFactory();
                 default:
-                    throw new CurrencyUnsupportedException(currency);
+                    throw new CurrencyUnsupportedException(currencyCode);
             }
         }
     }

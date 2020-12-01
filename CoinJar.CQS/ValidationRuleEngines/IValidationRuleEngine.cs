@@ -4,6 +4,6 @@ namespace CoinJar.CQS.ValidationRuleEngines
 {
     public interface IValidationRuleEngine<in T>
     {
-        OperationResult Validate(T coin);
+        OperationResult Validate(T entity);
     }
 }
