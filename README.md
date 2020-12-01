@@ -9,7 +9,7 @@ Each US coin has the assumed fluid ounces:
 - Dollar (100c): 0.0800
 
 The application exposes 3 endpoints:
-1. Add a coin.
+1. Add a coin (Only USD currency is currently supported)
 2. Get the total amount of our coins.
 3. Reset the coins.
 
@@ -30,3 +30,4 @@ The application exposes 3 endpoints:
 - Open visual studio and set CoinJar.API as start up project
 - Run the solution
 - Swagger page comes up in your default browser
+
